@@ -1,0 +1,9 @@
+# Core dependencies (algorithm + experiments + figures + test suite)
+# The core algorithm needs only NumPy; matplotlib is used for the figures;
+# pytest is required to run tests/test_theory.py (see README.md quick start).
+numpy>=1.21
+matplotlib>=3.5
+pytest>=7.0
+
+# Optional: only for the independent-engine validation (experiments/pybullet_sweep.py)
+# pybullet>=3.2

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Exact Robust Motion Cones"
+authors:
+  - family-names: "Elsayed"
+    given-names: "Ahmed S. M."
+    affiliation: "Norwegian University of Science and Technology (NTNU)"
+  - family-names: "Grammatikos"
+    given-names: "Sotirios"
+    affiliation: "Norwegian University of Science and Technology (NTNU)"
+repository-code: "https://github.com/asedky97/exact-robust-motion-cones"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Exact Robust Motion Cones: Guaranteed Sticking Manipulation under Parametric and Geometric Contact Uncertainty"
+  authors:
+    - family-names: "Elsayed"
+      given-names: "Ahmed S. M."
+      affiliation: "Norwegian University of Science and Technology (NTNU)"
+    - family-names: "Grammatikos"
+      given-names: "Sotirios"
+      affiliation: "Norwegian University of Science and Technology (NTNU)"
+  journal: "IEEE Access"
+  year: 2026

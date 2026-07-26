@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+out/
+*.mat.bak
+
+# graphical abstract: kept locally / in the manuscript package, not in this repo
+experiments/make_graphical_abstract.py
+figures/graphical_abstract.png
+figures/graphical_abstract.pdf

@@ -1,0 +1,36 @@
+name: tests
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python-version: ["3.9", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install numpy matplotlib pytest
+      - name: Run tests
+        run: python -m pytest tests/ -v
+      - name: Quick experiment sanity pass
+        run: |
+          cd experiments
+          python run_all.py --quick
+      - name: Diagnostic scripts sanity pass
+        run: |
+          cd experiments
+          python branch_alignment_check.py --n 1000
+          python branch_alignment_check.py --wide --n 1000
+          python e1_optimism_diagnostics.py --n 500
+          python e5_rotation_horizon_check.py --n 4000
+          python e4_linear_range_check.py
+          python e1_sampling_certification_check.py

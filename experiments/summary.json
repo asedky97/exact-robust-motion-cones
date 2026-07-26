@@ -1,0 +1,94 @@
+{
+  "E1": {
+    "robust_deg": [
+      -59.91,
+      59.91
+    ],
+    "nominal_deg": [
+      -85.11,
+      85.11
+    ],
+    "n_evals": 10,
+    "pct_optimistic": 1.85,
+    "max_vtx_err_deg": 0.24,
+    "t_exact_ms": 0.2602,
+    "t_grid_est_ms": 2241.9,
+    "speedup_est": 8614.0,
+    "speedup_paper": 225
+  },
+  "E2": {
+    "R": {
+      "slide_pct": 0.0,
+      "n": 12453,
+      "ci_95": [
+        0.0,
+        0.03
+      ]
+    },
+    "N": {
+      "slide_pct": 5.24,
+      "n": 5191,
+      "ci_95": [
+        4.67,
+        5.88
+      ]
+    },
+    "S": {
+      "slide_pct": 93.25,
+      "n": 2356,
+      "ci_95": [
+        92.17,
+        94.2
+      ]
+    }
+  },
+  "E3": {
+    "total_slides": 0,
+    "theta_spread_deg": 9.66,
+    "theta_bound_deg": 33.18,
+    "pos_bound_mm": 144.8,
+    "pos_dispersion_mm": 26.4,
+    "pos_dev_nominal_mm": 26.5
+  },
+  "E4": {
+    "L_mu_per_unit": 10.8,
+    "L_c_per_m": 155.93,
+    "L_alpha_per_deg": 0.23,
+    "L_delta_per_m": 147.71,
+    "ratio_small": 0.992,
+    "ratio_full": 0.32,
+    "loss_full_deg": 50.4
+  },
+  "E5": {
+    "A_robust": {
+      "failure_pct": 0.0,
+      "n": 20000,
+      "ci_95": [
+        0.0,
+        0.02
+      ]
+    },
+    "B_world": {
+      "failure_pct": 96.81,
+      "n": 20000,
+      "ci_95": [
+        96.55,
+        97.04
+      ]
+    },
+    "C_nominal": {
+      "failure_pct": 38.42,
+      "n": 20000,
+      "ci_95": [
+        37.75,
+        39.1
+      ]
+    }
+  },
+  "E6": {
+    "transition_deg": 80,
+    "robust_edge_deg": 59.91,
+    "nominal_edge_deg": 85.11,
+    "between": true
+  }
+}
